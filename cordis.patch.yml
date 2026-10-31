@@ -1,0 +1,4 @@
+# 独立 Host 插件：原生 skills provider 与自动 bootstrap，同一生命周期卸载。
+- insert:
+    - id: superpowers-bridge
+      name: dsh-superpowers-bridge
