@@ -6,8 +6,8 @@ import { createHash } from 'node:crypto';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 // 固定提交而非跟随 main；升级必须显式修改提交并重新运行测试，避免运行时下载改变行为。
-// 当前对应上游 v7.0.1（2026-10-21 发布）。
-const revision = '2ce8aa15d05bd57213e6f746f953aafb7ded7a8b';
+// 当前对应上游 v7.0.2（固定提交，避免运行时下载改变行为）。
+const revision = 'c62ffea8267a70de07583e153544d355b6748a56';
 
 // 用法：node scripts/vendor.mjs [来源目录] [--tag vX.Y.Z]
 // 来源目录是 git 仓库时，按固定提交读取 blob（首选路径）。

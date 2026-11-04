@@ -10,8 +10,8 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 test('锁定上游版本，完整发现十五个不冲突的技能', () => {
   const { manifest, definitions } = loadCatalog();
-  assert.equal(manifest.version, '7.0.1');
-  assert.equal(manifest.revision, '2ce8aa15d05bd57213e6f746f953aafb7ded7a8b');
+  assert.equal(manifest.version, '7.0.2');
+  assert.equal(manifest.revision, 'c62ffea8267a70de07583e153544d355b6748a56');
   assert.equal(definitions.length, 15);
   for (const skill of definitions) {
     assert.match(skill.name, /^superpowers-[a-z][a-z0-9-]*$/);
